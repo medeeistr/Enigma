@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://bn2h0r4jlholy"]
+
+[ext_resource type="Script" uid="uid://dg468ynjmijbs" path="res://Minijoc1.gd" id="1_3xpnx"]
+[ext_resource type="Texture2D" uid="uid://coc020pwkpixy" path="res://cufar.png" id="2_fane2"]
+[ext_resource type="Texture2D" uid="uid://c6a0o8c3owh26" path="res://pergament.png" id="3_wv3dx"]
+
+[node name="Minijoc1" type="Panel" unique_id=1667218642]
+offset_left = 854.0
+offset_top = -4.0
+offset_right = 2014.0
+offset_bottom = 656.0
+script = ExtResource("1_3xpnx")
+
+[node name="Button1" type="Button" parent="." unique_id=1871604942]
+layout_mode = 0
+offset_left = 371.0
+offset_top = 334.0
+offset_right = 571.0
+offset_bottom = 525.0
+icon = ExtResource("2_fane2")
+flat = true
+expand_icon = true
+
+[node name="Button2" type="Button" parent="." unique_id=2089362111]
+layout_mode = 0
+offset_left = 608.0
+offset_top = 332.0
+offset_right = 812.0
+offset_bottom = 523.0
+icon = ExtResource("2_fane2")
+flat = true
+expand_icon = true
+
+[node name="Button3" type="Button" parent="." unique_id=203533280]
+layout_mode = 0
+offset_left = 856.0
+offset_top = 331.0
+offset_right = 1062.0
+offset_bottom = 522.0
+icon = ExtResource("2_fane2")
+flat = true
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=165743172]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 36.0
+offset_right = 898.0
+offset_bottom = 356.0
+scale = Vector2(1.1223403, 1.1596175)
+texture = ExtResource("3_wv3dx")
+
+[node name="Label" type="Label" parent="TextureRect" unique_id=2125211489]
+layout_mode = 0
+offset_left = 79.29856
+offset_top = 125.90358
+offset_right = 507.29855
+offset_bottom = 248.90358
+scale = Vector2(0.93311185, 0.8225647)
+theme_override_colors/font_color = Color(0, 0, 0, 0.7490196)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.7019608)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "CHALLENGE 1: Intuition
+You must choose a chest carefully! 
+Otherwise, a life will be forfeited."
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

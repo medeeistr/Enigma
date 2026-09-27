@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dspxpdsqyi1xo"]
+
+[ext_resource type="Texture2D" uid="uid://th1spouhomky" path="res://finish.png" id="1_yp4eo"]
+
+[node name="Control" type="Control" unique_id=1297701221]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Finish" type="Sprite2D" parent="." unique_id=1108898408]
+position = Vector2(577, 409)
+scale = Vector2(1.1815857, 0.8030163)
+texture = ExtResource("1_yp4eo")

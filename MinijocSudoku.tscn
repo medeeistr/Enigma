@@ -1,0 +1,142 @@
+[gd_scene format=3 uid="uid://dxdehn5i5aur3"]
+
+[ext_resource type="Script" uid="uid://s3lqml68pssl" path="res://MinijocSudoku.gd" id="1_pjl2x"]
+[ext_resource type="Texture2D" uid="uid://c6a0o8c3owh26" path="res://pergament.png" id="2_hy3kg"]
+
+[sub_resource type="Theme" id="Theme_pjl2x"]
+
+[node name="Control" type="Control" unique_id=497218828]
+light_mask = 1023
+visibility_layer = 1023
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2981.0
+offset_top = 327.0
+offset_right = 2981.0
+offset_bottom = 327.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5606416, 2.0904577)
+script = ExtResource("1_pjl2x")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1009493423]
+layout_mode = 0
+offset_left = -981.64746
+offset_top = -309.02325
+offset_right = -972.54
+offset_bottom = -284.1373
+scale = Vector2(262.07883, 56.928585)
+color = Color(0.8039216, 0.49019608, 0.34117648, 0.77254903)
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1313678819]
+custom_minimum_size = Vector2(820, 100)
+propagate_maximum_size = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -410.04254
+offset_top = -127.87071
+offset_right = 409.95746
+offset_bottom = 284.12927
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.86520255, 0.8060528)
+theme = SubResource("Theme_pjl2x")
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 4
+columns = 4
+
+[node name="Button" type="Button" parent="GridContainer" unique_id=769022387]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="GridContainer" unique_id=456306124]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="GridContainer" unique_id=825774084]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="GridContainer" unique_id=553675716]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="GridContainer" unique_id=350111189]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="GridContainer" unique_id=1818511470]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="GridContainer" unique_id=1138920129]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="GridContainer" unique_id=1017180166]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="GridContainer" unique_id=1617359988]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button10" type="Button" parent="GridContainer" unique_id=1329374494]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button11" type="Button" parent="GridContainer" unique_id=2112943018]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button12" type="Button" parent="GridContainer" unique_id=1080131148]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button13" type="Button" parent="GridContainer" unique_id=135267647]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button14" type="Button" parent="GridContainer" unique_id=488573956]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button15" type="Button" parent="GridContainer" unique_id=908751945]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="Button16" type="Button" parent="GridContainer" unique_id=1529026586]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=583424040]
+layout_mode = 0
+offset_left = 84.58061
+offset_top = -110.50212
+offset_right = 404.58063
+offset_bottom = 209.49788
+scale = Vector2(-0.67498416, 0.6024309)
+texture = ExtResource("2_hy3kg")
+
+[node name="Label" type="Label" parent="TextureRect" unique_id=959464504]
+layout_mode = 0
+offset_left = 272.20004
+offset_top = 114.87075
+offset_right = 520.2001
+offset_bottom = 237.87076
+scale = Vector2(-0.92715096, 0.8344505)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 0.44705883)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+text = "CHALLENGE 2: Intelligence
+In order to pass, you must 
+solve this puzzle in 30s.
+Failing which, a life will be lost."
+autowrap_trim_flags = 0
+justification_flags = 0

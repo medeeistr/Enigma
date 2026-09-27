@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cr7mwsq5c03k7"]
+
+[ext_resource type="Texture2D" uid="uid://cpag0gjijqigh" path="res://over.jpg" id="1_y26ei"]
+[ext_resource type="Script" uid="uid://bwxxbhihudjal" path="res://game_over.gd" id="1_yxx3c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_745m4"]
+
+[node name="Control" type="Control" unique_id=2040612280]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_yxx3c")
+
+[node name="Over" type="Sprite2D" parent="." unique_id=522930447]
+position = Vector2(653, 329)
+scale = Vector2(2.187693, 1.5054944)
+texture = ExtResource("1_y26ei")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1099106092]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 116.0
+offset_right = 1010.0
+offset_bottom = 299.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=741854480]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 0)
+theme_override_colors/font_outline_color = Color(18.892157, 18.892157, 18.892157, 1)
+theme_override_font_sizes/font_size = 53
+text = "You lost. Wanna try again, Prince?"
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=348018546]
+layout_mode = 2
+theme_override_font_sizes/font_size = 46
+text = "Try Again"
+icon = SubResource("AtlasTexture_745m4")
+icon_alignment = 1
+expand_icon = true

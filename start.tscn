@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://crpqfx6agt3jh"]
+
+[ext_resource type="Texture2D" uid="uid://cmnuc6u55i016" path="res://castle.jpg" id="1_ots34"]
+[ext_resource type="Script" uid="uid://bqcdvbm0d7ehj" path="res://start.gd" id="1_qn1rc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3hhje"]
+line_spacing = 10.0
+font_size = 150
+shadow_size = 70
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_xayco"]
+font_size = 41
+shadow_size = 20
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pi36s"]
+
+[node name="Control" type="Control" unique_id=1795530372]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qn1rc")
+
+[node name="Castle" type="Sprite2D" parent="." unique_id=1394313511]
+position = Vector2(575.25, 327)
+scale = Vector2(1.8082942, 1.8)
+texture = ExtResource("1_ots34")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=401760089]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 39.0
+offset_right = 882.0
+offset_bottom = 361.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1718565477]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "ENIGMA"
+label_settings = SubResource("LabelSettings_3hhje")
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=603193381]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Save the Princess"
+label_settings = SubResource("LabelSettings_xayco")
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=2019933360]
+custom_minimum_size = Vector2(200, 100)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 70
+text = "START"
+icon = SubResource("AtlasTexture_pi36s")
+expand_icon = true
+text_direction = 1
